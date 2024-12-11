@@ -10,7 +10,7 @@ import Pulsify from './pages/Pulsify';
 import NCAS from './pages/NCAS';
 import URE from './pages/URE';
 import arrow from './images/vector light.svg';
-import Hamburger from './components/Hamburger';
+
 
 function Home() {
   return (

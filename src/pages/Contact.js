@@ -27,12 +27,6 @@ function Contact() {
                         <img src={ arrow } alt='arrow'></img>
                     </div>
                 </a>
-                <a href='https://www.instagram.com/chepp.ies/' target="_blank" rel="noreferrer" className='hover-underline-dark w-20'>
-                    <div className='flex space-x-2 hover-underline-dark w-20'>
-                        <p>instagram</p>
-                        <img src={ arrow } alt='arrow'></img>
-                    </div>
-                </a>
             </div>
         </div>
     );
