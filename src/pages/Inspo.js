@@ -5,7 +5,7 @@ function Inspo() {
   return (
     <div className="home">
       <div className="flex h-48 items-center justify-center">
-        <span className="text-center font-semibold">
+        <span className="text-lg text-center font-semibold">
             I often look at magazines or Pinterest for inspiration.<br/>
             These are a few that I found interesting.
         </span>

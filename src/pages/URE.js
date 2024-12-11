@@ -1,10 +1,7 @@
 import React from 'react';
 import githubLightLogo from '../images/github lightmode.svg';
-import projectImage1 from '../images/statify login.png';
-import projectImage2 from '../images/statify landing page.png'
-import projectImage3 from '../images/statify top artists.png'
-import projectImage4 from '../images/statify charts.png'
-import projectImage5 from '../images/statify playlist.png'
+import projectImage1 from '../images/URE project photo.JPG';
+import projectImage2 from '../images/prototype.jpg';
 
 
 function URE() {
@@ -34,18 +31,15 @@ function URE() {
         <p className='text-sm italic'>C, ESP-IDF, LoRa Radios</p>
       </div>
       <div className='flex flex-col items-center justify-center'>
-        <h2 className='font-bold text-lg mt-10 mb-6'>LOGIN PAGE</h2>
+        <h2 className='font-bold text-lg mt-10 mb-6'>TEAM</h2>
         <div className='space-y-7'>
           <img src={projectImage1} className='w-[60.625rem] h-[36.875rem]' alt='project-image' />
         </div>
       </div>
       <div className='flex flex-col items-center justify-center'>
-        <h2 className='font-bold text-lg mt-10 mb-6'>TOP ITEMS PAGE</h2>
+        <h2 className='font-bold text-lg mt-10 mb-6'>PROTOTYPE</h2>
         <div className='space-y-7'>
           <img src={projectImage2} className='w-[60.625rem] h-[36.875rem]' alt='project-image' />
-          <img src={projectImage3} className='w-[60.625rem] h-[36.875rem]' alt='project-image' />
-          <img src={projectImage4} className='w-[60.625rem] h-[36.875rem]' alt='project-image' />
-          <img src={projectImage5} className='w-[60.625rem] h-[36.875rem]' alt='project-image' />
         </div>
       </div>
       <div className='flex flex-col justify-center items-center space-y-11 mt-36 mb-32'>
