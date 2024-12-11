@@ -1,13 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.hover-underline {
+    position: relative;
+}
+
+.hover-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px; 
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-out;
+}
+
+.hover-underline:hover::after {
+    width: 100%;
+}
+
+.hover-underline-dark {
+    position: relative;
+}
+
+.hover-underline-dark::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px; 
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease-out;
+}
+
+.hover-underline-dark:hover::after {
+    width: 100%;
+}
+
+.fade {
+    opacity: 0;
+    animation: fade-in 0.45s ease-in-out 0.45s forwards; /* Added 'forwards' to keep the final state */
+}
+
+.side-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.side-scroll-content {
+    display: inline-block;
+    white-space: normal;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1; /* Corrected to valid opacity value */
+    }
+}
+
+
+.slide-in {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    transform-origin: bottom;
+}
+
+.slide-out {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    transform-origin: top;
+}
+
+.home {
+    animation: fade-up 0.5s
+}
+
+.title {
+    animation: fade-down 0.5s
+}
+
+@keyframes fade-down {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-up {
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
 }
